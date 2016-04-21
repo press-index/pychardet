@@ -13,3 +13,12 @@ This library is python binding to [uchardet](https://github.com/BYVoid/uchardet)
 >>> detect('hello')
 {'encoding': 'ascii', 'confidence': 1.0}
 ```
+## Installation
+
+### Requirements
+[Cython](http://docs.cython.org/src/quickstart/install.html)
+
+### Installation
+```bash
+$ pip install git+https://github.com/PRESS-INDEX/pychardet.git
+```
