@@ -23,22 +23,24 @@ def get_requirements():
         return f.read().splitlines()
 
 
-lang_models = glob.glob('pychardet/src/LangModels/*.cpp')
-uchardet_sources = glob.glob('pychardet/src/*.cpp') + lang_models
+def get_extensions():
+    lang_models = glob.glob('pychardet/src/LangModels/*.cpp')
+    uchardet_sources = glob.glob('pychardet/src/*.cpp') + lang_models
 
-pychardet_sources = ["pychardet/universal_detector.pyx",
-                     "pychardet/detector.cpp"]
+    pychardet_sources = ["pychardet/universal_detector.pyx",
+                         "pychardet/detector.cpp"]
 
-extensions = [
-    Extension("pychardet.universal_detector",
-              sources=pychardet_sources + uchardet_sources,
-              language="c++")
-]
+    return [
+        Extension("pychardet.universal_detector",
+                  sources=pychardet_sources + uchardet_sources,
+                  language="c++")
+    ]
+
 
 setup(
     name='pychardet',
     version=get_version(),
-    author='Pressindex',
+    author='PressIndex',
     packages=find_packages(),
     install_requires=get_requirements(),
     classifiers=(
@@ -48,6 +50,6 @@ setup(
         'Programming Language :: Python :: 3',
     ),
     include_package_data=True,
-    ext_modules=extensions,
+    ext_modules=get_extensions(),
     cmdclass={'build_ext': build_ext}
 )

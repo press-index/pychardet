@@ -1,5 +1,5 @@
 # Universal encoding detection in Python
-This library is python binding to [uchardet](https://github.com/BYVoid/uchardet)
+This library is a python binding to [uchardet](https://github.com/BYVoid/uchardet).
 ## Example
 ### Python 3
 ```python

@@ -9,8 +9,7 @@ __version__ = "0.0.1"
 
 def detect(byte_str):
     """
-
-    :param six.binary_type byte_str: Byte string to decode
+    :param six.binary_type byte_str: Byte string with unknown encoding
     :return Detected encoding with confidence
     :rtype: dict
     """
