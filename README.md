@@ -18,7 +18,7 @@ This library is python binding to [uchardet](https://github.com/BYVoid/uchardet)
 ### Requirements
 [Cython](http://docs.cython.org/src/quickstart/install.html)
 
-### Installation
+### From github source
 ```bash
 $ pip install git+https://github.com/PRESS-INDEX/pychardet.git
 ```
