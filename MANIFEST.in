@@ -1,0 +1,1 @@
+include pychardet/universal_detector.pyx
