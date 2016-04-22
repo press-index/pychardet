@@ -20,5 +20,5 @@ This library is a python binding to [universal chardet](https://github.com/BYVoi
 
 ### From github source
 ```bash
-$ pip install git+https://github.com/PRESS-INDEX/pychardet.git
+$ pip install git+https://github.com/press-index/pychardet.git
 ```
