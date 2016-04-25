@@ -2,13 +2,12 @@
 import glob
 import os
 import re
-import pip
 from setuptools import setup, find_packages, Extension
 
 try:
     from Cython.Distutils import build_ext
 except ImportError:
-    pip.main(['install', 'Cython==0.24'])
+    os.system("pip install Cython==0.24")
     from Cython.Distutils import build_ext
 
 
