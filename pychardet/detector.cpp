@@ -58,7 +58,7 @@ void UniversalDetectorWithConfidence::Reset()
 
 const char* UniversalDetectorWithConfidence::GetCharset() const
 {
-    return m_charset? m_charset : "";
+    return m_charset ? m_charset : "";
 }
 
 float UniversalDetectorWithConfidence::GetConfidence()
