@@ -7,7 +7,7 @@ from setuptools import setup, find_packages, Extension
 try:
     from Cython.Distutils import build_ext
 except ImportError:
-    os.system("pip install Cython==0.24")
+    os.system("pip install Cython>=0.24")
     from Cython.Distutils import build_ext
 
 

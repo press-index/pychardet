@@ -1,1 +1,11 @@
 include pychardet/universal_detector.pyx
+include requirements.txt
+recursive-include pychardet *.cmake
+recursive-include pychardet *.h
+recursive-include pychardet *.tab
+recursive-include pychardet *.txt
+recursive-include tests *.be
+recursive-include tests *.le
+recursive-include tests *.py
+recursive-include tests *.smi
+recursive-include tests *.txt
